@@ -256,4 +256,5 @@ Com esses dados, consigo montar uma configuração equilibrada e adequada para v
 - Todos os modelos testados responderam corretamente seguindo o modelo de saída e as regras propostas, entretanto, todos responderam perguntas fora do escopo(Qual a previsão do tempo)
  demonstrando a necessidade de adicionar os egde cases no prompt principal e reforçar algumas instruções
 
-- [Observação 2]
+- Notamos que existe uma diferença significativa em cada modelo testado, cada um retornou com sucesso as recomendações solicitados, mas ouve diferença na recomendação em alguns casos,
+o gemini sempre chega próximo do limite do orçamento, enquanto o GPT, Claude e Copilot, sempre deixam uma margem maior
