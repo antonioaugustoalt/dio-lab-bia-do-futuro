@@ -1,0 +1,5 @@
+id,modelo,tipo,capacidade_gb,velocidade_leitura,perfil_indicado,preco_brl
+sto_001,Kingston NV2,NVMe,1000,3500,gamer;dev,400
+sto_002,WD Green,SATA,480,550,basico,200
+sto_003,Samsung 980 Pro,NVMe,1000,7000,editor;datacenter,900
+sto_004,XPG SX8200,NVMe,1000,3500,gamer;geral,420
