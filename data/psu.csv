@@ -1,0 +1,5 @@
+id,modelo,potencia_watts,certificacao,perfil_indicado,preco_brl
+psu_001,MSI MAG A650BN,650,80+ Bronze,gamer,320
+psu_002,Corsair CV550,550,80+ Bronze,basico,280
+psu_003,Corsair RM750x,750,80+ Gold,high_end,750
+psu_004,XPG Core Reactor 850,850,80+ Gold,ia;datacenter,900
