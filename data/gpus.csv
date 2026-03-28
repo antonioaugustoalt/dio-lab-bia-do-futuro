@@ -1,0 +1,6 @@
+id,modelo,vram_gb,arquitetura,perfil_indicado,consumo_watts,preco_brl,nivel
+gpu_001,RX 6600,8,RDNA2,gamer_1080p,132,1600,entrada
+gpu_002,RX 7600,8,RDNA3,gamer_1080p_ultra,165,1800,medio
+gpu_003,RTX 4060,8,Ada Lovelace,gamer;ia_leve;dlss,115,2000,medio
+gpu_004,RTX 4070,12,Ada Lovelace,editor;ia;gamer_1440p,200,3500,alto
+gpu_005,RTX 3060,12,Ampere,editor;ia_basica,170,1900,medio
