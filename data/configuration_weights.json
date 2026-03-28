@@ -1,0 +1,40 @@
+{
+  "pesos_perfil": {
+    "gamer": {
+      "cpu": 0.3,
+      "gpu": 0.5,
+      "ram": 0.1,
+      "storage": 0.1
+    },
+    "programador": {
+      "cpu": 0.5,
+      "gpu": 0.1,
+      "ram": 0.2,
+      "storage": 0.2
+    },
+    "editor_video": {
+      "cpu": 0.3,
+      "gpu": 0.3,
+      "ram": 0.2,
+      "storage": 0.2
+    },
+    "office": {
+      "cpu": 0.3,
+      "gpu": 0.0,
+      "ram": 0.3,
+      "storage": 0.4
+    },
+    "ia_dev": {
+      "cpu": 0.3,
+      "gpu": 0.4,
+      "ram": 0.2,
+      "storage": 0.1
+    }
+  },
+  "regras_globais": {
+    "min_ram_editor": 32,
+    "min_ram_dev": 16,
+    "gpu_budget_ratio_min": 0.3,
+    "psu_margin": 1.4
+  }
+}
