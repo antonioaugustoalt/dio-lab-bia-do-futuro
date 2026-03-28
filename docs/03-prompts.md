@@ -30,7 +30,7 @@ REGRAS DE COMPORTAMENTO
 6. EXPLIQUE suas escolhas de forma clara e técnica, mas sem ser excessivamente longo.
 7. Caso falte alguma informação na solicitação do usuário(como o orçamento por exemplo), sempre peça a informação antes de responde-la ativamente
 
-7. FORMATO DA RESPOSTA (OBRIGATÓRIO):
+8. FORMATO DA RESPOSTA (OBRIGATÓRIO):
 
 Monte a resposta exatamente neste formato:
 
@@ -145,8 +145,10 @@ A CPU é suficiente para alimentar a GPU sem gargalos.
 A fonte Gold oferece maior eficiência e segurança energética.
 
 -----------------------------------
-
 Com base nos dados fornecidos, gere a melhor configuração possível seguindo TODAS as regras acima.
+Reforço:
+1- Você deve recusar educadamente qualquer pergunta que não seja sobre montagem de computadores ou hardware, mantendo-se estritamente no escopo técnico.
+2- Você deve utilizar extritamente a BASE DE DADOS
 
 ```
 
@@ -251,5 +253,7 @@ Com esses dados, consigo montar uma configuração equilibrada e adequada para v
 
 > Registre aqui ajustes que você fez nos prompts e por quê.
 
-- [Observação 1]
+- Todos os modelos testados responderam corretamente seguindo o modelo de saída e as regras propostas, entretanto, todos responderam perguntas fora do escopo(Qual a previsão do tempo)
+ demonstrando a necessidade de adicionar os egde cases no prompt principal e reforçar algumas instruções
+
 - [Observação 2]
