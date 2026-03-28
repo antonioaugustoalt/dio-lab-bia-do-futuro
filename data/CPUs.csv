@@ -1,0 +1,6 @@
+id,modelo,nucleos,threads,clock_base,clock_boost,plataforma,perfil_indicado,consumo_watts,preco_brl,custo_beneficio
+cpu_001,Ryzen 5 5600,6,12,3.5,4.4,AM4,gamer;programador;geral,65,899,alto
+cpu_002,Ryzen 7 5700X,8,16,3.4,4.6,AM4,editor;programador;multitarefa,65,1200,alto
+cpu_003,Ryzen 5 7600,6,12,3.8,5.1,AM5,gamer;future-proof,65,1400,medio
+cpu_004,Intel i5-12400F,6,12,2.5,4.4,LGA1700,gamer;geral,65,950,alto
+cpu_005,Intel i7-12700K,12,20,3.6,5.0,LGA1700,editor;dev;datacenter leve,125,1800,medio
