@@ -1,0 +1,6 @@
+id,modelo,socket,chipset,perfil_indicado,preco_brl
+mb_001,B450M DS3H,AM4,B450,entrada,450
+mb_002,B550M Aorus Elite,AM4,B550,gamer;upgrade,700
+mb_003,X670 Aorus Elite,AM5,X670,high_end,1800
+mb_004,H610M-E,LGA1700,H610,basico,500
+mb_005,B660M Gaming,LGA1700,B660,gamer,750
