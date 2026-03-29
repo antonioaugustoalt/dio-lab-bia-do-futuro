@@ -48,49 +48,67 @@ Crie testes simples para validar seu agente:
 
 ---
 
-Resultados
+## Resultados
 
 Após os testes, registre suas conclusões:
 
-O que funcionou bem:
+### ✅ O que funcionou bem:
+- O agente montou configurações de PCs corretamente com base no perfil e orçamento  
+- As recomendações seguiram as regras definidas (ex: priorização de GPU para gamer)  
+- A compatibilidade entre CPU e placa-mãe foi mantida em todos os cenários  
+- O agente respondeu corretamente aos edge cases (fora de escopo, falta de contexto e segurança)  
+- Ambas as versões do código geraram respostas consistentes e corretas  
 
-O agente conseguiu montar configurações de PCs corretamente com base no perfil e orçamento
-As recomendações respeitaram as regras definidas (priorização de GPU para gamer, CPU para programador, etc.)
-A compatibilidade entre CPU e placa-mãe foi mantida em todos os testes
-O agente lidou corretamente com edge cases (fora de escopo, falta de contexto e segurança)
-As duas versões do código (básica e otimizada) responderam corretamente às solicitações
+---
 
-O que pode melhorar:
+### ⚠️ O que pode melhorar:
+- O tempo de resposta ainda é relativamente alto em ambas as versões  
+- Necessidade de otimizar processamento e reduzir latência  
+- Melhorar a lógica de decisão em cenários mais complexos  
+- Implementar cache ou pré-processamento para ganho de performance  
+- Avaliar uso de modelos mais rápidos ou especializados  
 
-O tempo de resposta ainda é relativamente alto em ambas as versões
-Necessidade de otimização no processamento e/ou escolha de modelo mais eficiente
-Melhorar a priorização dinâmica das peças para cenários mais complexos
-Implementar cache ou pré-processamento para reduzir latência
-Avaliar integração com modelos mais rápidos ou especializados
-Observações Técnicas
+---
+
+## Observações Técnicas
 
 Foram testadas duas versões do sistema:
 
-Versão 1: Estrutura básica conforme apresentada inicialmente
-Versão 2: Versão otimizada com melhorias sugeridas por IA
+- **Versão 1:** Estrutura básica conforme apresentada inicialmente  
+- **Versão 2:** Versão otimizada com melhorias sugeridas por IA  
 
-Ambas as versões apresentaram alta assertividade nas respostas, porém:
+### 🔍 Resultados observados:
+- Ambas as versões apresentaram **alta assertividade nas respostas**  
+- A versão otimizada teve **melhor desempenho (menor tempo de resposta)**  
+- Mesmo assim, foi identificada **lentidão considerável**, indicando possível gargalo  
 
-A versão otimizada teve melhor desempenho (menor tempo de resposta)
-Ainda assim, foi observada lentidão considerável, indicando gargalo no processamento ou no modelo utilizado
-Modelo utilizado:
-GPT-oss:20b
-Considerações:
-O modelo utilizado possui bom nível de qualidade, porém apresenta custo computacional elevado
-Para uso em produção, pode ser interessante avaliar:
-Modelos mais leves (melhor latência)
-Abordagens híbridas (regra + IA)
-Redução de contexto enviado ao modelo
- Conclusão Geral
+---
 
-O agente demonstrou ser funcional e confiável para recomendação de PCs, com boa aderência às regras e aos perfis definidos.
+### 🤖 Modelo utilizado:
+- `GPT-oss:20b`
 
-Entretanto, a performance ainda é um ponto crítico, sendo recomendadas otimizações futuras para tornar a solução viável em cenários reais (tempo de resposta menor e melhor experiência do usuário).
+### 📌 Considerações:
+- O modelo apresenta boa qualidade, porém alto custo computacional  
+- Pode não ser ideal para aplicações com necessidade de resposta rápida  
+- Possíveis melhorias incluem:
+  - Uso de modelos mais leves  
+  - Redução do contexto enviado ao modelo  
+  - Estratégia híbrida (regras + IA)  
+
+---
+
+## 📊 Conclusão Geral
+
+O agente demonstrou ser **funcional, consistente e confiável** na recomendação de configurações de PCs.
+
+As regras foram corretamente aplicadas e os resultados foram coerentes com os perfis definidos.
+
+No entanto, **a performance ainda é um ponto crítico**, sendo necessário otimizar o tempo de resposta para tornar a solução mais viável em ambientes reais.
+
+---
+
+> [!TIP]
+> Para melhorar significativamente a performance, considere pré-processar os dados e deixar a IA responsável apenas pela decisão final e explicação, reduzindo o custo e o tempo de resposta.
 
 ## Métricas Avançadas (Opcional)
 
