@@ -50,6 +50,16 @@ O agente resolve esse problema através de:
 Entrada do usuário → Filtro de dados → Regras → Construção de contexto → IA → Recomendação final
 
 ---
+flowchart TD
+    A[Usuário] -->|Mensagem| B[Interface]
+    B --> C[LLM]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Validação]
+    E --> F[Resposta]
+
+
+---
 ## ▶️ Como Executar o Projeto
 
 Siga os passos abaixo para rodar o agente localmente:
