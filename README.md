@@ -70,7 +70,7 @@ streamlit run .\source\app.py
 ```
 ### Versão otimizada via IA
 ```
-streamlit run .\source\app_phi2.0.py
+streamlit run .\source\app_2.0.py
 ```
 
 ---
