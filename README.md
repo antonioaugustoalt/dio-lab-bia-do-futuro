@@ -1,149 +1,227 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🧠 PC Builder AI Agent  
+### Sistema Inteligente de Recomendação de PCs (LLM + Dados Estruturados)
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+![Status](https://img.shields.io/badge/status-complete-success)
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![AI](https://img.shields.io/badge/AI-LLM-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-## O Que Você Deve Entregar
+## 🚀 Visão Geral
 
-### 1. Documentação do Agente
+O **PC Builder AI Agent** é um sistema inteligente desenvolvido para recomendar configurações completas de computadores com base em:
 
-Defina **o que** seu agente faz e **como** ele funciona:
+- Perfil do usuário (gamer, programador, editor, etc.)
+- Orçamento disponível
+- Dados reais de hardware
+- Regras técnicas (compatibilidade, balanceamento, desempenho)
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+O projeto combina **lógica baseada em dados + inteligência artificial**, simulando um sistema real de recomendação.
 
 ---
 
-### 2. Base de Conhecimento
+## 🎯 Problema
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Montar um PC ideal não é trivial:
 
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- Usuários não sabem quais peças priorizar  
+- Risco de incompatibilidade entre componentes  
+- Má distribuição do orçamento  
+- Falta de conhecimento técnico  
 
 ---
 
-### 3. Prompts do Agente
+## 💡 Solução
 
-Documente os prompts que definem o comportamento do seu agente:
+O agente resolve esse problema através de:
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
+- Estruturação de dados de hardware em CSV/JSON  
+- Aplicação de regras determinísticas (compatibilidade e prioridades)  
+- Uso de IA para refinar decisões e gerar explicações  
+- Geração de uma **configuração completa e equilibrada**
 
 ---
 
-### 5. Avaliação e Métricas
+## 🧠 Como Funciona
 
-Descreva como você avalia a qualidade do seu agente:
+### 🔄 Pipeline
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+Entrada do usuário → Filtro de dados → Regras → Construção de contexto → IA → Recomendação final
 
 ---
 
-### 6. Pitch
+## ⚙️ Arquitetura
 
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
+- **Camada de Dados**
+  - CSVs com peças de hardware
+  - JSON com pesos e regras
 
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
+- **Camada Lógica (Python)**
+  - Filtragem por orçamento  
+  - Validação de compatibilidade  
+  - Priorização por perfil  
 
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+- **Camada de IA (LLM)**
+  - Refinamento da decisão  
+  - Geração da justificativa  
 
 ---
 
-## Estrutura do Repositório
+## 🗂️ Estrutura do Projeto
+data/
+├── cpus.csv
+├── gpus.csv
+├── ram.csv
+├── storage.csv
+├── motherboards.csv
+├── psu.csv
+├── cases.csv
+├── profiles.csv
+├── build_rules.csv
+├── compatibility.csv
+└── configuration_weights.json
 
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
-```
+src/
+└── pc_builder_agent.py
+
 
 ---
 
-## Dicas Finais
+## 💻 Exemplo de Uso
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+### Entrada
+
+Perfil: gamer  
+Orçamento: 5000  
+
+### Saída
+
+--- CONFIGURAÇÃO RECOMENDADA ---
+
+CPU: Ryzen 5 5600  
+GPU: RX 7600  
+RAM: 16GB DDR4  
+Armazenamento: SSD NVMe 1TB  
+Placa-mãe: B550M  
+Fonte: 650W 80+ Bronze  
+Gabinete: Airflow alto  
+
+Preço total: R$ 4.500,00  
+
+--- JUSTIFICATIVA ---
+
+A GPU foi priorizada para maximizar desempenho em jogos.  
+A CPU escolhida evita gargalos e oferece excelente custo-benefício.  
+A configuração está equilibrada dentro do orçamento.
+
+---
+
+## 📊 Estratégia de Dados
+
+- Dados baseados no mercado real brasileiro  
+- Estrutura otimizada para filtragem com Pandas  
+- Contexto reduzido enviado à IA (eficiência de tokens)  
+
+---
+
+## 🧪 Avaliação
+
+### Cenários testados
+
+- Recomendação gamer  
+- Recomendação para programador  
+- Compatibilidade de peças  
+- Falta de contexto  
+- Perguntas fora do escopo  
+
+### Resultados
+
+- Alta assertividade  
+- Respeito às regras  
+- Tratamento correto de edge cases  
+
+---
+
+## ⚠️ Limitações
+
+- Preços não são em tempo real  
+- Não considera estoque  
+- Compatibilidade simplificada (socket)  
+- Performance depende do modelo  
+
+---
+
+## ⚡ Performance
+
+Foram testadas duas versões:
+
+- **Versão 1:** Estrutura básica  
+- **Versão 2:** Versão otimizada  
+
+Resultados:
+
+- Ambas corretas  
+- Versão otimizada mais rápida  
+- Ainda com latência considerável  
+
+Modelo utilizado:
+
+GPT-oss:20b
+
+---
+
+## 🛠️ Tecnologias
+
+- Python  
+- Pandas  
+- JSON / CSV  
+- LLM  
+
+---
+
+## 🧩 Funcionalidades
+
+- Recomendação baseada em orçamento  
+- Priorização por perfil  
+- Validação de compatibilidade  
+- Explicação técnica das escolhas  
+- Tratamento de edge cases  
+
+---
+
+## 🧠 Decisões de Projeto
+
+- Abordagem híbrida (regras + IA)  
+- Pré-processamento para reduzir custo de IA  
+- Separação clara entre lógica e decisão  
+
+---
+
+## 🚀 Melhorias Futuras
+
+- Preços em tempo real  
+- Estimativa de FPS  
+- Comparação entre builds  
+- Interface web (chatbot)  
+- Otimização de performance  
+
+---
+
+## 📌 Conclusão
+
+O projeto demonstra:
+
+- Aplicação prática de IA em problema real  
+- Integração entre dados estruturados e LLM  
+- Capacidade de projetar sistemas escaláveis  
+
+---
+
+## 👨‍💻 Autor
+
+Projeto desenvolvido como solução completa de agente inteligente com foco em aplicação real.
+
+---
+
+💡 Projeto desenvolvido com mentalidade de produção: equilíbrio entre performance, custo e qualidade.
