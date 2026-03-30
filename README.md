@@ -68,6 +68,10 @@ pip install pandas requests streamlit
 ```
 streamlit run .\source\app.py
 ```
+### Versão otimizada via IA
+```
+streamlit run .\source\app_phi2.0.py
+```
 
 ---
 ## ⚙️ Arquitetura
