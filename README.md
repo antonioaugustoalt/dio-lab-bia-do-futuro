@@ -256,6 +256,10 @@ O projeto demonstra:
 -Antonio Augusto-
 Projeto desenvolvido como solução completa de agente inteligente.
 
+## Pitch de Apresentação do Projeto:
+
+https://youtu.be/NAIqc5TJipQ
+
 ---
 
 💡 Projeto desenvolvido com mentalidade de produção: equilíbrio entre performance, custo e qualidade.
