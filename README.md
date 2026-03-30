@@ -50,7 +50,26 @@ O agente resolve esse problema através de:
 Entrada do usuário → Filtro de dados → Regras → Construção de contexto → IA → Recomendação final
 
 ---
+## ▶️ Como Executar o Projeto
 
+Siga os passos abaixo para rodar o agente localmente:
+
+### 1. Clone o repositório
+
+```
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+### 2. Instale as dependências 
+```
+pip install pandas requests streamlit
+```
+### 3. Rode o programa
+```
+streamlit run .\source\app.py
+```
+
+---
 ## ⚙️ Arquitetura
 
 - **Camada de Dados**
