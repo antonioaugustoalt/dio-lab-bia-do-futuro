@@ -141,7 +141,8 @@ Foram testadas duas versões do sistema:
 
 ## Conclusão Geral
 
-O agente demonstrou ser **funcional, consistente e confiável** na recomendação de configurações de PCs.
+O agente demonstrou ser **funcional, consistente e confiável** na recomendação de configurações de PCs. 
+Entretanto, algumas vezes misturou contextos de um perfil dentro de outro (falar sobre rodar jogos em recomendação para uso em data center/ia)
 
 As regras foram corretamente aplicadas e os resultados foram coerentes com os perfis definidos.
 
