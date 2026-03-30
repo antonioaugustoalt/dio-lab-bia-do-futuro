@@ -48,16 +48,7 @@ O agente resolve esse problema através de:
 ### 🔄 Pipeline
 
 Entrada do usuário → Filtro de dados → Regras → Construção de contexto → IA → Recomendação final
-
 ---
-flowchart TD
-    A[Usuário] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Validação]
-    E --> F[Resposta]
-
 
 ---
 ## ▶️ Como Executar o Projeto
@@ -99,6 +90,16 @@ streamlit run .\source\app_2.0.py
   - Refinamento da decisão  
   - Geração da justificativa  
 
+```mermaid
+flowchart TD
+    A[Usuário: Perfil + Orçamento] --> B[Carregamento de Dados]
+    B --> C[Filtro por Orçamento]
+    C --> D[Regras de Montagem]
+    D --> E[Seleção de Componentes]
+    E --> F[Construção de Contexto]
+    F --> G[LLM]
+    G --> H[Configuração Final + Justificativa]
+```
 ---
 
 ## 🗂️ Estrutura do Projeto
