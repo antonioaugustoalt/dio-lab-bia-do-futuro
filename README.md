@@ -252,8 +252,8 @@ O projeto demonstra:
 
 ---
 
-## 👨‍💻 Autor
--Antonio Augusto-
+## 👨‍💻 Autor: -Antonio Augusto-
+
 Projeto desenvolvido como solução completa de agente inteligente.
 
 ## Pitch de Apresentação do Projeto:
