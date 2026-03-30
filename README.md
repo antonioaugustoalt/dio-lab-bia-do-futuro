@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/status-complete-success)
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![AI](https://img.shields.io/badge/AI-LLM-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
+
 
 ---
 
